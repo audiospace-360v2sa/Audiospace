@@ -6,7 +6,7 @@
 
 PyTorch Implementation of **AudioSpace**, a model for generating spatial audio from 360-degree videos.  
 
-We provide our implementation and pretrained models as open-source in this repository. 🚀💡  
+Due to anonymization requirements, the model's cloud storage link will be released at a later stage.  
 
 ---
 
@@ -17,15 +17,16 @@ We provide an example of how you can perform inference using AudioSpace.
 To run inference, follow these steps:  
 
 1️⃣ **Navigate to the root directory.** 📂  
-2️⃣ **Create the inference environment:**  
-   ```bash
-   conda env create -f environment.yml
-   ```  
-3️⃣ **Activate the environment:**  
-   ```bash
-   conda activate Audiospace_infer
-   ```  
-4️⃣ **Run inference with the provided script:**  
+2️⃣ **Create the Inference Environment.**  
+
+To set up the environment, ensure you have **Python >= 3.8.20** installed. Then, run the following commands:  
+
+```bash
+pip install -r requirements.txt
+pip install git+https://github.com/patrick-kidger/torchcubicspline.git
+```
+ 
+3️⃣ **Run inference with the provided script:**  
    ```bash
    bash demo.sh video_path checkpoint_dir cuda_id
    ```  
@@ -38,8 +39,9 @@ To evaluate generated audio, follow these steps:
 
 1️⃣ **Navigate to** `metrics/evaluate`. 📂  
 2️⃣ **Create the evaluation environment:**  
+    To set up the environment, ensure you have **Python >= 3.10.15** installed. Then, run the following commands: 
    ```bash
-   conda env create -f environment.yml
+   pip install -r requirements.txt
    ```  
 3️⃣ **Modify `eval.sh`** to specify:  
    - 🎧 The path to real (ground truth) audio files  

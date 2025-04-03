@@ -240,7 +240,7 @@ if __name__ == "__main__":
     device = torch.device(args.device)
     print('device:', device)
 
-    seed=np.random.randint(0, 2**32 - 1, dtype=np.uint32)
+    seed=np.random.randint(42, 2**10 - 1, dtype=np.uint32)
 
     print("seed: ", str(seed))
     

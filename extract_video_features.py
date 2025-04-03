@@ -430,7 +430,6 @@ def extract_video_features(video_path, feature_type, temp_dir):
             for future in as_completed(futures):
                 try:
                     result = future.result()
-                    print(result)
                 except Exception as e:
                     print(f"Task failed: {e}")
     else:

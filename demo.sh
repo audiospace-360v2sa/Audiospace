@@ -3,7 +3,7 @@ video_path=$1
 checkpoint_dir=$2 # checkpoint dir
 cuda=$3 # cuda id
 
-model_config="configs/v2a_foa_stable_clip_huge_load_dual_2_global.json"
+model_config="configs/v2a_foa.json"
 
 base_name="demo"
 
