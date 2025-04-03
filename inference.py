@@ -1,4 +1,3 @@
-import gc
 import platform
 import random
 import numpy as np
@@ -104,7 +103,7 @@ def generate_cond_f(
 ):
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
-    gc.collect()
+
 
     # print(f"Prompt: {prompt}")
     # import ipdb
@@ -222,7 +221,7 @@ def generate_cond_f(
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description='Run gradio interface')
+    parser = argparse.ArgumentParser(description='Run inference')
     parser.add_argument('--pretrained-name', type=str, help='Name of pretrained model', required=False)
     parser.add_argument('--base-dir', type=str, help='Video Directory', required=False)
     parser.add_argument('--infer-type', type=str, help='Inference Type', default='v2a',
