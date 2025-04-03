@@ -30,7 +30,7 @@ pip install git+https://github.com/patrick-kidger/torchcubicspline.git
    ```bash
    bash demo.sh video_path checkpoint_dir cuda_id
    ```  
-💡 *You can also modify `demo.sh` to change the output directory.* The `cases` folder contains some sample 360-degree videos in the equiangular format—make sure your videos follow the same format! 🎥✨  
+💡 *You can also modify `demo.sh` to change the output directory.* The `cases` folder contains some sample 360-degree videos in the equirectangular format—make sure your videos follow the same format! 🎥✨  
 
 ---
 
