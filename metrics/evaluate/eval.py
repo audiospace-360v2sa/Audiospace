@@ -1,4 +1,3 @@
-# navigate up one directory to get to stable-audio-metrics
 import sys
 import os
 
