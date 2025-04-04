@@ -10,6 +10,17 @@ Due to anonymization requirements, **our model will be available on Hugging Face
 
 ---
 
+## 🧠 Model Architecture & Demo  
+
+The overall architecture of AudioSpace is shown below:  
+
+<img src="assets/framework.png" width="100%">  
+
+Curious about the results? 🎧🌐  
+👉 **[Try our demo page here!](https://audiospace-360v2sa.github.io/)**  
+
+---
+
 ## 🎬 Quick Start  
 We provide an example of how you can perform inference using AudioSpace.  
 
@@ -66,12 +77,4 @@ result_path=""    # Path to save results
 
 💡 *Have fun experimenting with AudioSpace! 🛠️💖*
 
-## References and Licensing 
-
-The model and inference components are adapted from [Stable Audio Tools](https://github.com/Stability-AI/stable-audio-tools). The corresponding license can be found in `audiospace/LICENSE`. Stable Audio Tools also includes dependencies that require specific licenses, which are available in the `audiospace/LICENSES` directory.  
-
-The **metrics** components are adapted from [PaSST](https://github.com/kkoutini/PaSST) and [OpenL3](https://github.com/marl/openl3). Their respective licenses can be found in `metrics/LICENSES`. For a detailed breakdown, refer to `metrics/LICENSES/README.md`.  
-
-## Acknowledgments  
-We would like to express our gratitude to the authors and contributors of **Stable Audio Tools, PaSST, and OpenL3** for their invaluable work, which has greatly influenced and supported this project. Their contributions to the open-source community have been instrumental in advancing audio-related research and applications.  
 
