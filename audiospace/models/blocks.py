@@ -306,8 +306,7 @@ def snake_beta(x, alpha, beta):
 # except RuntimeError:
 #     pass
 
-# Adapted from https://github.com/NVIDIA/BigVGAN/blob/main/activations.py under MIT license
-# License available in LICENSES/LICENSE_NVIDIA.txt
+
 class SnakeBeta(nn.Module):
 
     def __init__(self, in_features, alpha=1.0, alpha_trainable=True, alpha_logscale=True):
