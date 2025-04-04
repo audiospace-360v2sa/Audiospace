@@ -6,7 +6,7 @@
 
 PyTorch Implementation of **AudioSpace**, a model for generating spatial audio from 360-degree videos.  
 
-Due to anonymization requirements, **our model will be available on Hugging Face soon.**  
+Due to anonymization requirements, ##**our model will be available on Hugging Face soon.**  
 
 ---
 
