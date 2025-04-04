@@ -28,8 +28,6 @@ def checkpoint(function, *args, **kwargs):
     return torch.utils.checkpoint.checkpoint(function, *args, **kwargs)
 
 
-# Copied and modified from https://github.com/lucidrains/x-transformers/blob/main/x_transformers/attend.py under MIT License
-# License can be found in LICENSES/LICENSE_XTRANSFORMERS.txt
 
 def create_causal_mask(i, j, device):
     return torch.ones((i, j), device = device, dtype = torch.bool).triu(j - i + 1)
