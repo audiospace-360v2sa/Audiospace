@@ -24,8 +24,6 @@ def remove_weight_norm_from_model(model):
 
     return model
 
-# Sampling functions copied from https://github.com/facebookresearch/audiocraft/blob/main/audiocraft/utils/utils.py under MIT license
-# License can be found in LICENSES/LICENSE_META.txt
 
 def multinomial(input: torch.Tensor, num_samples: int, replacement=False, *, generator=None):
     """torch.multinomial with arbitrary number of dimensions, and number of candidates on the last dimension.
