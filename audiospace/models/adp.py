@@ -1,5 +1,5 @@
 # Copied and modified from https://github.com/archinetai/audio-diffusion-pytorch/blob/v0.0.94/audio_diffusion_pytorch/modules.py under MIT License
-# License can be found in LICENSES/LICENSE_ADP.txt
+
 
 import math
 from inspect import isfunction
@@ -67,8 +67,7 @@ Convolutional Blocks
 """
 import typing as tp
 
-# Copied from https://github.com/facebookresearch/audiocraft/blob/main/audiocraft/modules/conv.py under MIT License
-# License available in LICENSES/LICENSE_META.txt
+
 
 def get_extra_padding_for_conv1d(x: torch.Tensor, kernel_size: int, stride: int,
                                  padding_total: int = 0) -> int:
